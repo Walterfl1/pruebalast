@@ -27,3 +27,9 @@ struct Player {
     }
 };
 
+// Función de comparación para ordenar por poder (Requerimiento 7)
+// Usado en std::sort
+bool compararPorPoder(const Player& a, const Player& b) {
+    // Orden descendente (más fuerte primero)
+    return a.poder > b.poder;
+}
